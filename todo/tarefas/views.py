@@ -65,7 +65,6 @@ def cadastroAtividade(request):
 
     return render(request, "cadastroAtividade.html", {"usuarios": usuarios})
 
-@login_required(login_url="/tarefas/login")
 def cadastroUsuario(request):
 
     if(request.method == "POST"):
